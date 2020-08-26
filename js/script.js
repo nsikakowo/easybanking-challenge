@@ -1,5 +1,5 @@
 const mobileBtn = document.querySelector(".mobile-nav-icon button");
-const mobileOverlay= document.querySelector("header nav");
+const mobileOverlay= document.querySelector(".mobile-nav-container");
 const mobileMenuContainer = document.querySelector(".mobile-nav-container");
 
 let menuBar ='<i class="fas fa-bars"></i>';

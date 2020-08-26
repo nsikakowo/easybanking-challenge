@@ -13,15 +13,66 @@
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:600px){
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 5% 10px 5%;
         height: 10vh;
+        position: relative;
        
     }
+
+    .mobile-nav-container{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(to bottom, #ffffff17, #00000042);
+        position: absolute;
+        left: 0;
+        top: 0px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        background-color: #fff;
+        margin: 50px auto;
+        border-radius: 5px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 50px;
+
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        
+    }
+    
+    nav ul li {
+        padding: 5px auto;
+        border-color: linear;
+        text-align: center;
+    }
+    
+     nav ul li a{
+        color: var(--grayish-blue);
+        transition: .8s ease;
+    }
+    
+    nav ul li a:hover{
+        color: var(--dark-blue);
+        font-weight: 400;
+    }
+    
+    
     
     .slider{
         display: flex;
